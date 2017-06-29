@@ -12,6 +12,12 @@
 		0873F4771F04CD9500E9E97F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0873F4751F04CD9500E9E97F /* Main.storyboard */; };
 		0873F4791F04CD9500E9E97F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0873F4781F04CD9500E9E97F /* Assets.xcassets */; };
 		0873F47C1F04CD9500E9E97F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0873F47A1F04CD9500E9E97F /* LaunchScreen.storyboard */; };
+		0873F4871F04D0B000E9E97F /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873F4861F04D0AF00E9E97F /* UIImage.swift */; };
+		0873F4891F04D16400E9E97F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873F4881F04D16400E9E97F /* PhotoCell.swift */; };
+		0873F48B1F04D17400E9E97F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873F48A1F04D17400E9E97F /* CollectionViewController.swift */; };
+		0873F48D1F04D19C00E9E97F /* PhotoCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873F48C1F04D19C00E9E97F /* PhotoCommentViewController.swift */; };
+		0873F48F1F04D1AD00E9E97F /* ZoomPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873F48E1F04D1AD00E9E97F /* ZoomPhotoViewController.swift */; };
+		0873F4911F04D1D000E9E97F /* MangePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873F4901F04D1D000E9E97F /* MangePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		0873F4781F04CD9500E9E97F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0873F47B1F04CD9500E9E97F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0873F47D1F04CD9500E9E97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0873F4861F04D0AF00E9E97F /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		0873F4881F04D16400E9E97F /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		0873F48A1F04D17400E9E97F /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		0873F48C1F04D19C00E9E97F /* PhotoCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCommentViewController.swift; sourceTree = "<group>"; };
+		0873F48E1F04D1AD00E9E97F /* ZoomPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomPhotoViewController.swift; sourceTree = "<group>"; };
+		0873F4901F04D1D000E9E97F /* MangePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MangePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				0873F4711F04CD9500E9E97F /* AppDelegate.swift */,
+				0873F4921F04D1DC00E9E97F /* collection */,
+				0873F48C1F04D19C00E9E97F /* PhotoCommentViewController.swift */,
+				0873F48E1F04D1AD00E9E97F /* ZoomPhotoViewController.swift */,
+				0873F4901F04D1D000E9E97F /* MangePageViewController.swift */,
 				0873F4731F04CD9500E9E97F /* ViewController.swift */,
 				0873F4751F04CD9500E9E97F /* Main.storyboard */,
 				0873F4781F04CD9500E9E97F /* Assets.xcassets */,
@@ -62,6 +78,16 @@
 				0873F47D1F04CD9500E9E97F /* Info.plist */,
 			);
 			path = PhotoScroll;
+			sourceTree = "<group>";
+		};
+		0873F4921F04D1DC00E9E97F /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				0873F4861F04D0AF00E9E97F /* UIImage.swift */,
+				0873F4881F04D16400E9E97F /* PhotoCell.swift */,
+				0873F48A1F04D17400E9E97F /* CollectionViewController.swift */,
+			);
+			name = collection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0873F48D1F04D19C00E9E97F /* PhotoCommentViewController.swift in Sources */,
+				0873F4891F04D16400E9E97F /* PhotoCell.swift in Sources */,
+				0873F48F1F04D1AD00E9E97F /* ZoomPhotoViewController.swift in Sources */,
+				0873F4871F04D0B000E9E97F /* UIImage.swift in Sources */,
+				0873F4911F04D1D000E9E97F /* MangePageViewController.swift in Sources */,
 				0873F4741F04CD9500E9E97F /* ViewController.swift in Sources */,
 				0873F4721F04CD9500E9E97F /* AppDelegate.swift in Sources */,
+				0873F48B1F04D17400E9E97F /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
