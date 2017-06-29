@@ -15,11 +15,7 @@ class CollectionViewController: UICollectionViewController {
     fileprivate let thumbnailSize: CGFloat = 70
     fileprivate let sectionInsets = UIEdgeInsets(top: 10, left: 5.0, bottom: 10, right: 5.0)
     fileprivate let photos = ["photo1","photo2","photo3","photo4","photo5"]
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,16 +33,35 @@ class CollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        if let cell = sender as? UICollectionViewCell,
+            let indexPath = collectionView?.indexPath(for: cell),let zoomPhotoViewController = segue.destination as? ZoomPhotoViewController
+        {
+            zoomPhotoViewController.photoName = "photo\(indexPath.row + 1)"
+        }
+        
+        if let cell = sender as? UICollectionViewCell,
+            let  indexPath = collectionView?.indexPath(for: cell),
+            let photoComentViewController = segue.destination as? PhotoCommentViewController
+            
+        {
+            photoComentViewController.photoName = "photo\(indexPath.row + 1)"
+        }
+        
+        if let cell = sender as? UICollectionViewCell,
+            let indexPath = collectionView?.indexPath(for: cell),
+            let managePageViewController = segue.destination as? MangePageViewController
+        {
+            managePageViewController.photos = photos
+            managePageViewController.currentIndex = indexPath.row
+        }
     }
-    */
-    
+ 
 
     // MARK: UICollectionViewDataSource
 
